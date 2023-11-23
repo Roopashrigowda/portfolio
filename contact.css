@@ -1,0 +1,89 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #EEF0F7;
+}
+
+
+.container{
+    width: 400px;
+    height: 550px;
+    background-color: #7a6b37;
+    position: static;
+}
+.innerInput{
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+    position: static;
+    left: -30px;
+    top: 5%;
+    box-shadow: 10px 6px 15px 6px #5c5a52;
+}
+.inputBox{
+    padding: 20px 40px;
+}
+.inputBox h1{
+    font-size: 36px;
+    font-weight: normal;
+    color: #363636;
+}
+.inputItems{
+    width: 100%;
+    margin-top: 40px;
+    position: static;
+}
+.inputItems input[type="text"], 
+input[type="email"],
+textarea{
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #f4eded;
+    resize: none;
+}
+.inputItems label{
+    top: 0;
+    position: static;
+    left: 0;
+    pointer-events: none;
+    font-size: 16px;
+    color: #363636;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.inputItems input:focus + label,
+.inputItems input:valid + label,
+.inputItems textarea:focus + label
+{
+    top: -30px;
+    font-size: 16px;
+    padding: 4px 8px;
+    background-color: #2b2c27;
+    color: white;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.inputItems input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: #232421;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 15px #141413;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.inputItems input[type="submit"]:hover{
+    background-color: #270707;
+}
+
